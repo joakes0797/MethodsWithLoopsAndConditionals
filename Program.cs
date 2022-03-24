@@ -55,8 +55,34 @@ namespace MethodsWithLoopsAndConditionals
             }
             else
                 Console.WriteLine($"{d} is odd.");
-        }     
+        }
         
+        public static void Eggplant()
+        {
+            bool e;
+            int result;
+            Console.WriteLine("This method checks whether an integer is positive or negative.");
+
+            do
+            {
+                Console.WriteLine("Choose a whole number: ");
+                e = int.TryParse(Console.ReadLine(), out result);
+            } while (!e);
+
+            if (result > 0)
+            {
+                Console.WriteLine($"{result} is a positive integer");
+            }
+            else if (result < 0)
+                Console.WriteLine($"{result} is a negative integer");
+            else
+            {
+                Console.WriteLine($"{result} is neither negative nor positive.");
+            }
+        }
+        
+
+
 
 
         static void Main(string[] args)
@@ -90,14 +116,13 @@ namespace MethodsWithLoopsAndConditionals
 
             // Write a method to check whether a given number is even or odd
 
-            Delta();
-
-
-
-
-
+            //Delta();
 
             // Write a method to check whether a given number is positive or negative
+
+            Eggplant();
+
+
             // Write a method to read the age of a candidate and determine whether they can vote.
             // Hint: Use Parse or the safer TryParse() for an extra challenge
             // Parse()
