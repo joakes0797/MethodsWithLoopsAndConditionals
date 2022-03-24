@@ -22,6 +22,28 @@ namespace MethodsWithLoopsAndConditionals
             }
         }
 
+        public static void Charlie()
+        {
+            Console.WriteLine("This method checks two integers and tests for them for equality.");
+
+            int c;
+            int d;
+            
+            do
+            {
+                Console.WriteLine("Give me the first integer: ");
+                c = int.Parse(Console.ReadLine());
+                Console.WriteLine("Give me another integer: ");
+                d = int.Parse(Console.ReadLine());
+                if (c == d)
+                {
+                    Console.WriteLine($"{c} is equal to {d}.");
+                }
+                else
+                Console.WriteLine($"{c} and {d} are not equal. Try again.");
+            }while (c != d);
+        }
+
 
         static void Main(string[] args)
         {
@@ -46,10 +68,15 @@ namespace MethodsWithLoopsAndConditionals
 
             // Write a method that will print to the console numbers 3 through 999 by 3 each time
 
-            Banana();
-
+            //Banana();
 
             // Write a method to accept two integers as parameters and check whether they are equal or not
+
+            Charlie();
+
+
+
+
             // Write a method to check whether a given number is even or odd
             // Write a method to check whether a given number is positive or negative
             // Write a method to read the age of a candidate and determine whether they can vote.
