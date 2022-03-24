@@ -81,7 +81,28 @@ namespace MethodsWithLoopsAndConditionals
             }
         }
         
+        public static void Foxtrot()
+        {
+            bool userAge;
+            int result;
+            Console.WriteLine("This method determines whether you're old enough to vote in federal elections.");
 
+            do
+            {
+                Console.WriteLine("Enter your age: ");
+                userAge = int.TryParse(Console.ReadLine(), out result);
+            } while (!userAge);
+
+            if (result < 18)
+            {
+                Console.WriteLine($"You can't vote unless you turn 18 on or before Election Day.");
+            }
+            else
+            {
+                Console.WriteLine($"You are old enough to vote in a federal election.");
+            }
+
+        }
 
 
 
@@ -120,34 +141,15 @@ namespace MethodsWithLoopsAndConditionals
 
             // Write a method to check whether a given number is positive or negative
 
-            Eggplant();
-
+            //Eggplant();
 
             // Write a method to read the age of a candidate and determine whether they can vote.
+
+            Foxtrot();
+
             // Hint: Use Parse or the safer TryParse() for an extra challenge
             // Parse()
             // TryParse()
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
