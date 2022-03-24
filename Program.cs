@@ -126,6 +126,24 @@ namespace MethodsWithLoopsAndConditionals
 
         }
 
+        public static void Harambe()
+        {
+            bool userInteger;
+            int result;
+            Console.WriteLine("This method will display the multiplication table for a given number.");
+
+            do
+            {
+                Console.WriteLine("Pick an integer: ");
+                userInteger = int.TryParse(Console.ReadLine(), out result);
+            }while(!userInteger);
+
+            for (int x = 1; x <=12; x++)
+            {
+                Console.WriteLine($"{result} x {x} = {x * result}");
+            }
+        }
+
 
 
         static void Main(string[] args)
@@ -169,18 +187,20 @@ namespace MethodsWithLoopsAndConditionals
 
             //Foxtrot();
 
-                            // Hint: Use Parse or the safer TryParse() for an extra challenge
-                            // Parse()
-                            // TryParse()
+            // Hint: Use Parse or the safer TryParse() for an extra challenge
+            // Parse()
+            // TryParse()
 
 
             // ------------------------------------------------------------------- Heatin Up Section
 
             // Write a method to check if an integer (from the user) is in the range -10 to 10
 
-            Giraffe();
+            //Giraffe();
 
             // Write a method to display the multiplication table(from 1 to 12) of a given integer
+
+            Harambe();
 
         }   
         
