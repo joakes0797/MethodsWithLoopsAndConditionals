@@ -104,6 +104,28 @@ namespace MethodsWithLoopsAndConditionals
 
         }
 
+        public static void Giraffe()
+        {
+            bool userResponse;
+            int result;
+            Console.WriteLine("This method checks if your integer is between -10 and 10.");
+
+            do
+            {
+                Console.WriteLine("What is your integer?");
+                userResponse = int.TryParse(Console.ReadLine(), out result);
+            }while (!userResponse);
+            if (result >= -10 && result <= 10)
+            {
+                Console.WriteLine($"{result} is between -10 and 10.");
+            }
+            else
+            {
+                Console.WriteLine($"{result} is not between -10 and 10.");
+            }
+
+        }
+
 
 
         static void Main(string[] args)
@@ -145,18 +167,22 @@ namespace MethodsWithLoopsAndConditionals
 
             // Write a method to read the age of a candidate and determine whether they can vote.
 
-            Foxtrot();
+            //Foxtrot();
 
-            // Hint: Use Parse or the safer TryParse() for an extra challenge
-            // Parse()
-            // TryParse()
-
-
+                            // Hint: Use Parse or the safer TryParse() for an extra challenge
+                            // Parse()
+                            // TryParse()
 
 
             // ------------------------------------------------------------------- Heatin Up Section
 
-        }   // Write a method to check if an integer (from the user) is in the range -10 to 10
+            // Write a method to check if an integer (from the user) is in the range -10 to 10
+
+            Giraffe();
+
             // Write a method to display the multiplication table(from 1 to 12) of a given integer
+
+        }   
+        
     }
 }
