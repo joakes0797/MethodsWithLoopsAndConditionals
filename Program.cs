@@ -7,7 +7,7 @@ namespace MethodsWithLoopsAndConditionals
         static void Main(string[] args)
         {
 
-            Console.WriteLine("Hello solar system");
+            Console.WriteLine("Hello galaxy");
 
 
         }
