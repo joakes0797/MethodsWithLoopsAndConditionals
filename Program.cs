@@ -13,7 +13,14 @@ namespace MethodsWithLoopsAndConditionals
             }
         }
 
-
+        public static void Banana()
+        {
+            Console.WriteLine("This method prints number 3 to 999 in increments of 3: ");
+            for (var b = 3; b <= 999; b+=3)
+            {
+                Console.WriteLine(b);
+            }
+        }
 
 
         static void Main(string[] args)
@@ -35,11 +42,11 @@ namespace MethodsWithLoopsAndConditionals
 
             // Write a method that will print to the console all numbers 1000 through - 1000
 
-            Apple();
+            //Apple();
 
             // Write a method that will print to the console numbers 3 through 999 by 3 each time
 
-            
+            Banana();
 
 
             // Write a method to accept two integers as parameters and check whether they are equal or not
