@@ -44,6 +44,20 @@ namespace MethodsWithLoopsAndConditionals
             }while (c != d);
         }
 
+        public static void Delta()
+        {
+            Console.WriteLine("This method checks whether an integer is even or odd. Choose a number: ");
+            int d = int.Parse(Console.ReadLine());
+
+            if (d % 2 == 0)
+            {
+                Console.WriteLine($"{d} is even.");
+            }
+            else
+                Console.WriteLine($"{d} is odd.");
+        }     
+        
+
 
         static void Main(string[] args)
         {
@@ -72,12 +86,17 @@ namespace MethodsWithLoopsAndConditionals
 
             // Write a method to accept two integers as parameters and check whether they are equal or not
 
-            Charlie();
-
-
-
+            //Charlie();
 
             // Write a method to check whether a given number is even or odd
+
+            Delta();
+
+
+
+
+
+
             // Write a method to check whether a given number is positive or negative
             // Write a method to read the age of a candidate and determine whether they can vote.
             // Hint: Use Parse or the safer TryParse() for an extra challenge
