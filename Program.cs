@@ -4,7 +4,7 @@ namespace MethodsWithLoopsAndConditionals
 {
     internal class Program
     {
-        public static void Apple()
+        public static void IncrementByOne()
         {
             Console.WriteLine("This method prints all numbers 1000 to -1000:");
             for (var a = 1000; a >= -1000; a--)
@@ -13,7 +13,7 @@ namespace MethodsWithLoopsAndConditionals
             }
         }
 
-        public static void Banana()
+        public static void IncrementByThree()
         {
             Console.WriteLine("This method prints number 3 to 999 in increments of 3: ");
             for (var b = 3; b <= 999; b+=3)
@@ -22,7 +22,7 @@ namespace MethodsWithLoopsAndConditionals
             }
         }
 
-        public static void Charlie()
+        public static void IntegerCompare()
         {
             Console.WriteLine("This method checks two integers and tests for them for equality.");
 
@@ -40,11 +40,11 @@ namespace MethodsWithLoopsAndConditionals
                     Console.WriteLine($"{c} is equal to {d}.");
                 }
                 else
-                Console.WriteLine($"{c} and {d} are not equal. Try again.");
+                Console.WriteLine($"{c} and {d} are not equal. Pick two equal numbers to continue. Try again.");
             }while (c != d);
         }
 
-        public static void Delta()
+        public static void EvenOrOdd()
         {
             Console.WriteLine("This method checks whether an integer is even or odd. Choose a number: ");
             int d = int.Parse(Console.ReadLine());
@@ -57,7 +57,7 @@ namespace MethodsWithLoopsAndConditionals
                 Console.WriteLine($"{d} is odd.");
         }
         
-        public static void Eggplant()
+        public static void PositiveOrNegative()
         {
             bool e;
             int result;
@@ -81,7 +81,7 @@ namespace MethodsWithLoopsAndConditionals
             }
         }
         
-        public static void Foxtrot()
+        public static void VotingAge()
         {
             bool userAge;
             int result;
@@ -104,7 +104,7 @@ namespace MethodsWithLoopsAndConditionals
 
         }
 
-        public static void Giraffe()
+        public static void BetweenTheTens()
         {
             bool userResponse;
             int result;
@@ -126,7 +126,7 @@ namespace MethodsWithLoopsAndConditionals
 
         }
 
-        public static void Harambe()
+        public static void MultTable()
         {
             bool userInteger;
             int result;
@@ -165,27 +165,27 @@ namespace MethodsWithLoopsAndConditionals
 
             // Write a method that will print to the console all numbers 1000 through - 1000
 
-            //Apple();
+            IncrementByOne();
 
-            // Write a method that will print to the console numbers 3 through 999 by 3 each time
+            //Write a method that will print to the console numbers 3 through 999 by 3 each time
 
-            //Banana();
+            IncrementByThree();
 
-            // Write a method to accept two integers as parameters and check whether they are equal or not
+            //Write a method to accept two integers as parameters and check whether they are equal or not
 
-            //Charlie();
+            IntegerCompare();
 
             // Write a method to check whether a given number is even or odd
 
-            //Delta();
+            EvenOrOdd();
 
             // Write a method to check whether a given number is positive or negative
 
-            //Eggplant();
+            PositiveOrNegative();
 
             // Write a method to read the age of a candidate and determine whether they can vote.
 
-            //Foxtrot();
+            VotingAge();
 
             // Hint: Use Parse or the safer TryParse() for an extra challenge
             // Parse()
@@ -196,11 +196,11 @@ namespace MethodsWithLoopsAndConditionals
 
             // Write a method to check if an integer (from the user) is in the range -10 to 10
 
-            //Giraffe();
+            BetweenTheTens();
 
             // Write a method to display the multiplication table(from 1 to 12) of a given integer
 
-            Harambe();
+            MultTable();
 
         }   
         
